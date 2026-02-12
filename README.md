@@ -1,14 +1,8 @@
 # rapport-master
 
-Vous trouverez ici un modèle de rapport en latex.
+This repository provides a LaTeX report template.
 
-N'hésitez pas à poster des issues ou faire des pull-request pour améliorer ce modèle.
-
----
-
-You'll find here a report template in latex.
-
-Do not hesitate to post issues or pull requests to improve this model.
+Feel free to open issues or submit pull requests to improve the template.
 
 ---
 

@@ -187,10 +187,10 @@ Running "make install" installs the files in the local TeX tree.
 \newcommand{\supervisor}[1]{\gdef\@supervisor{#1}}
 % \end{macro}
 % \begin{macro}{\universityname}
-% The name of the university. By default it is set to ``Universit\'e C\^ote d'Azur".\\
+% The name of the university. By default it is set to ``University Name".\\
 % |\universityname{Name of your university}|\\
 % You can of course put several universities if for instance you are in Erasmus.
-\def\@universityname{Universit\'e C\^ote d'Azur}
+\def\@universityname{University Name}
 \newcommand{\universityname}[1]{\gdef\@universityname{#1}}
 % \end{macro}
 % \begin{macro}{\universitylogo}
@@ -200,9 +200,9 @@ Running "make install" installs the files in the local TeX tree.
 \newcommand{\universitylogo}[1]{\gdef\@universitylogo{#1}}
 % \end{macro}
 % \begin{macro}{\formation}
-% The name of the formation. By default it is set to ``Master Informatique".\\
+% The name of the formation. By default it is set to ``Master's Program".\\
 % |\formation{Name of your formation}|
-\def\@formation{Master Informatique}
+\def\@formation{Master's Program}
 \newcommand{\formation}[1]{\gdef\@formation{#1}}
 % \end{macro}
 % \begin{macro}{\formationlogo}
@@ -264,7 +264,7 @@ Running "make install" installs the files in the local TeX tree.
     {\centering
     
     \vspace*{\fill}\noindent
-    {\LARGE\textsc{\if@englishtitlepage\@type\ report \else Rapport de \@type\fi}}
+    {\LARGE\textsc{\@type\ report}}
     
     \vspace{3cm}\noindent\rule{0.75\linewidth}{0.5mm}\\\vspace{0.5cm}
     {\Huge\textbf{\@title}}
@@ -274,7 +274,7 @@ Running "make install" installs the files in the local TeX tree.
     \vspace{3cm}
     {\Large
     \begin{minipage}[t]{0.4\linewidth}
-    \textit{\if@englishtitlepage Prepared by\else Réalisé par\fi}\\
+    \textit{Prepared by}\\
     \foreach \aut in \@author {
       \textbf{\aut\\}
     }
@@ -282,7 +282,7 @@ Running "make install" installs the files in the local TeX tree.
     \hfill
     \begin{minipage}[t]{0.4\linewidth}
     \begin{flushright}
-    \textit{\if@englishtitlepage Supervised by\else Encadré par\fi}\\
+    \textit{Supervised by}\\
     \foreach \sup in \@supervisor {
       \sup\\
     }
@@ -298,7 +298,7 @@ Running "make install" installs the files in the local TeX tree.
     \fi
     
     \vspace*{\fill}\noindent
-    {\large \@formation\\\if@englishtitlepage at \else à \fi \@universityname\\\@date}
+    {\large \@formation\\at \@universityname\\\@date}
     
     }
     

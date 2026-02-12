@@ -32,11 +32,11 @@
 \def\@author{No authors given}
 \def\@supervisor{No supervisor given}
 \newcommand{\supervisor}[1]{\gdef\@supervisor{#1}}
-\def\@universityname{Universit\'e C\^ote d'Azur}
+\def\@universityname{University Name}
 \newcommand{\universityname}[1]{\gdef\@universityname{#1}}
 \def\@universitylogo{logo-uca.png}
 \newcommand{\universitylogo}[1]{\gdef\@universitylogo{#1}}
-\def\@formation{Master Informatique}
+\def\@formation{Master's Program}
 \newcommand{\formation}[1]{\gdef\@formation{#1}}
 \def\@formationlogo{logo_haut.png}
 \newcommand{\formationlogo}[1]{\gdef\@formationlogo{#1}}
@@ -67,7 +67,7 @@
     {\centering
 
     \vspace*{\fill}\noindent
-    {\LARGE\textsc{\if@englishtitlepage\@type\ report \else Rapport de \@type\fi}}
+    {\LARGE\textsc{\@type\ report}}
 
     \vspace{3cm}\noindent\rule{0.75\linewidth}{0.5mm}\\\vspace{0.5cm}
     {\Huge\textbf{\@title}}
@@ -76,7 +76,7 @@
     \vspace{3cm}
     {\Large
     \begin{minipage}[t]{0.4\linewidth}
-    \textit{\if@englishtitlepage Prepared by\else Réalisé par\fi}\\
+    \textit{Prepared by}\\
     \foreach \aut in \@author {
       \textbf{\aut\\}
     }
@@ -84,7 +84,7 @@
     \hfill
     \begin{minipage}[t]{0.4\linewidth}
     \begin{flushright}
-    \textit{\if@englishtitlepage Supervised by\else Encadré par\fi}\\
+    \textit{Supervised by}\\
     \foreach \sup in \@supervisor {
       \sup\\
     }
@@ -100,7 +100,7 @@
     \fi
 
     \vspace*{\fill}\noindent
-    {\large \@formation\\\if@englishtitlepage at \else à \fi \@universityname\\\@date}
+    {\large \@formation\\at \@universityname\\\@date}
 
     }
 

@@ -1,18 +1,18 @@
-%%%%%%%%%% Coloration syntaxique %%%%%%%%%%
+%%%%%%%%%% Syntax highlighting %%%%%%%%%%
 
 \usepackage{listings}
 
-\definecolor{bleu}{rgb}{0,0.6,0.8}
-\definecolor{vert}{rgb}{0,0.6,0.4}
+\definecolor{blueTone}{rgb}{0,0.6,0.8}
+\definecolor{greenTone}{rgb}{0,0.6,0.4}
 
 
-%%%%%%%%%% Couleurs pour la coloration syntaxique %%%%%%%%%%
-\colorlet{keyworkColor}{bleu}
-\colorlet{commentColor}{vert}
+%%%%%%%%%% Syntax highlighting colors %%%%%%%%%%
+\colorlet{keyworkColor}{blueTone}
+\colorlet{commentColor}{greenTone}
 \colorlet{stringColor}{magenta}
 
 
-%%%%% Environnement pour le C %%%%%
+%%%%% Environment for C %%%%%
 \lstdefinestyle{codeC}{
   mathescape=true,
   aboveskip = 0pt,
@@ -28,7 +28,7 @@
   {\lstset{style=codeC}}
   {}
 
-%%%%% Environnement pour le Python %%%%%
+%%%%% Environment for Python %%%%%
 \lstdefinestyle{codePy}{
   mathescape=true,
   aboveskip = 0pt,
@@ -44,7 +44,7 @@
   {\lstset{style=codePy}}
   {}
 
-%%%%% Environnement pour le Java %%%%%
+%%%%% Environment for Java %%%%%
 \lstdefinestyle{codeJ}{
   mathescape=true,
   aboveskip = 0pt,
@@ -60,7 +60,7 @@
   {\lstset{style=codeJ}}
   {}
 
-%%%%% Environnement pour le Shell %%%%%
+%%%%% Environment for Shell %%%%%
 \lstdefinestyle{codeS}{
   aboveskip = 0pt,
   breaklines = true,
@@ -75,7 +75,7 @@
   {\lstset{style=codeS}}
   {}
 
-%%%%% Environnement pour le Pseudo Code %%%%%
+%%%%% Environment for pseudocode %%%%%
 \lstdefinelanguage{pseudo}{
   morekeywords={return, if, then, foreach, for, while, do, from, to, print},
   sensitive=false,
@@ -99,7 +99,7 @@
   {\lstset{style=codePseudo}}
   {}
 
-%%%%% Environnement pour le R %%%%%
+%%%%% Environment for R %%%%%
 %% FIXME keywords like if are highlighted in the comments
 %% originally from /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
 %% add more keywords (mostly operators) and allow special style for the most important keywords 
@@ -197,7 +197,7 @@
   showstringspaces = false,
   keepspaces = false,
   frame = single,
-  %% accentued french characters
+  %% accented characters
   inputencoding=utf8,
   extendedchars=true,
    literate=%
