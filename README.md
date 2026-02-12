@@ -1,12 +1,6 @@
 # rapport-master
 
-Vous trouverez ici un modèle de rapport en latex.
-
-N'hésitez pas à poster des issues ou faire des pull-request pour améliorer ce modèle.
-
----
-
-You'll find here a report template in latex.
+You'll find here a report template in LaTeX.
 
 Do not hesitate to post issues or pull requests to improve this model.
 
@@ -21,4 +15,3 @@ Do not hesitate to post issues or pull requests to improve this model.
 |    See| http://www.latex-project.org/lppl.txt                                |
 
 This package extends the article document class for students reports.
-
